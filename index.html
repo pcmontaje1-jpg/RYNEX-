@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rynex | PC Components & Pre-Built Systems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">
+            <div class="logo-icon"><i class="fas fa-microchip"></i></div>
+            <span>RYNEX</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#prebuilt">Pre-Built PCs</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-cart-btn" id="cartBtn" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-truck"></i> Free shipping across Spain
+            </div>
+            <h1 class="hero-title">
+                Build Your <span class="gradient-text">Dream PC</span> with Rynex
+            </h1>
+            <p class="hero-subtitle">
+                Premium components and hand-built systems for gamers, creators, and professionals.
+                Quality you can trust, performance you can feel.
+            </p>
+            <div class="hero-buttons">
+                <a href="#components" class="btn btn-primary">
+                    <i class="fas fa-microchip"></i> Shop Components
+                </a>
+                <a href="#prebuilt" class="btn btn-outline">
+                    <i class="fas fa-desktop"></i> View Pre-Built PCs
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value">500+</div>
+                    <div class="hero-stat-label">Happy Customers</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">15+</div>
+                    <div class="hero-stat-label">Brands</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">24/7</div>
+                    <div class="hero-stat-label">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPONENTS SECTION -->
+    <section class="section" id="components">
+        <div class="section-header">
+            <h2 class="section-title">PC <span class="gradient-text">Components</span></h2>
+            <p class="section-subtitle">Choose from the best brands for your custom build</p>
+        </div>
+        <div class="components-grid" id="componentsGrid">
+            <!-- Cards will be injected by JavaScript -->
+        </div>
+    </section>
+
+    <!-- PRE-BUILT PCs SECTION -->
+    <section class="section section-alt" id="prebuilt">
+        <div class="section-header">
+            <h2 class="section-title">Pre-Built <span class="gradient-text">PCs</span></h2>
+            <p class="section-subtitle">Ready to go systems, tested and optimised</p>
+        </div>
+        <div class="prebuilt-grid" id="prebuiltGrid">
+            <!-- Cards injected by JavaScript -->
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="section" id="about">
+        <div class="section-header">
+            <h2 class="section-title">About <span class="gradient-text">Rynex</span></h2>
+            <p class="section-subtitle">Who we are and why we do it</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>We are passionate about technology</h3>
+                <p>Rynex was founded in 2020 in Barcelona with a simple mission: to provide high-quality PC components and pre-built systems at fair prices, backed by expert advice and exceptional customer service.</p>
+                <p>Whether you're a hardcore gamer, a video editor, or just need a reliable workstation, we have the parts and the knowledge to help you succeed.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>2-Year Warranty on all products</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-truck-fast"></i>
+                        <span>Fast delivery across Spain & EU</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 technical support</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="about-image-placeholder">
+                    <i class="fas fa-building"></i>
+                    <span>Our Barcelona HQ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section section-alt" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>support@rynex.tech</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+34 600 123 456</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Carrer de la Tecnologia 42, Barcelona, Spain</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon–Fri: 9:00–18:00 CET</span>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="handleContactForm(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-microchip"></i>
+                <span>RYNEX</span>
+            </div>
+            <p>&copy; 2025 Rynex. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART MODAL -->
+    <div class="cart-modal-overlay" id="cartOverlay" onclick="toggleCart()">
+        <div class="cart-modal" onclick="event.stopPropagation()">
+            <div class="cart-modal-header">
+                <h3>Your Cart</h3>
+                <button class="cart-modal-close" onclick="toggleCart()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items injected -->
+            </div>
+            <div class="cart-total" id="cartTotal">Total: €0</div>
+            <button class="btn btn-primary checkout-btn" onclick="openCheckout()">
+                <i class="fas fa-lock"></i> Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="checkout-modal-overlay" id="checkoutOverlay" onclick="closeCheckout()">
+        <div class="checkout-modal" onclick="event.stopPropagation()">
+            <div class="checkout-modal-header">
+                <h3>Checkout</h3>
+                <button class="cart-modal-close" onclick="closeCheckout()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="checkout-form">
+                <h4>Shipping Information</h4>
+                <div class="form-row">
+                    <input type="text" placeholder="Full Name" id="customerName" required>
+                    <input type="email" placeholder="Email Address" id="customerEmail" required>
+                </div>
+                <input type="text" placeholder="Street Address" id="customerAddress" required>
+                <div class="form-row">
+                    <input type="text" placeholder="City" id="customerCity" required>
+                    <input type="text" placeholder="Postal Code" id="customerPostal" required>
+                </div>
+                <h4>Payment Method</h4>
+                <div class="payment-options">
+                    <label class="payment-option active" id="monoBankOption" onclick="selectPayment('mono')">
+                        <input type="radio" name="payment" checked>
+                        <i class="fas fa-university"></i> Mono Bank
+                    </label>
+                    <label class="payment-option" id="visaOption" onclick="selectPayment('visa')">
+                        <input type="radio" name="payment">
+                        <i class="fab fa-cc-visa"></i> Visa / Mastercard
+                    </label>
+                    <label class="payment-option" id="paypalOption" onclick="selectPayment('paypal')">
+                        <input type="radio" name="payment">
+                        <i class="fab fa-paypal"></i> PayPal
+                    </label>
+                </div>
+                <div id="monoBankFields" class="payment-fields">
+                    <p>You will be redirected to Mono Bank to complete your payment securely.</p>
+                </div>
+                <div id="cardFields" class="payment-fields" style="display:none;">
+                    <input type="text" placeholder="Card Number (16 digits)" maxlength="16" id="cardNumber">
+                    <div class="form-row">
+                        <input type="text" placeholder="MM/YY" id="cardExpiry">
+                        <input type="text" placeholder="CVV" id="cardCvv" maxlength="3">
+                    </div>
+                </div>
+                <div id="paypalFields" class="payment-fields" style="display:none;">
+                    <p>You will be redirected to PayPal to complete your payment.</p>
+                </div>
+                <button class="btn btn-primary checkout-btn" onclick="placeOrder()">
+                    <i class="fas fa-lock"></i> Pay Now
+                </button>
+                <p class="checkout-total" id="checkoutTotal">Total: €0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUCCESS MESSAGE -->
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-modal">
+            <i class="fas fa-check-circle success-icon"></i>
+            <h3>Payment Successful!</h3>
+            <p>Thank you for your order. A confirmation email has been sent to you.</p>
+            <button class="btn btn-primary" onclick="closeSuccess()">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
